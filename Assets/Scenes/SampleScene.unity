@@ -287,6 +287,7 @@ GameObject:
   - component: {fileID: 770447137}
   - component: {fileID: 770447138}
   - component: {fileID: 770447139}
+  - component: {fileID: 770447140}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -394,12 +395,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 770447134}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b66eb454746e6a409058276ea8d05e0, type: 3}
+  m_Script: {fileID: 11500000, guid: 37a16b698120c25428c43fe5e1cff71e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Solve: 0
-  Tiles2: {fileID: 1129186641}
-  touch: 0
+  rb: {fileID: 0}
+  move: 0
+  move2: 0
+  speed: 10
 --- !u!50 &770447139
 Rigidbody2D:
   serializedVersion: 4
@@ -414,13 +416,28 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_AngularDrag: 0
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 6
+  m_Constraints: 0
+--- !u!114 &770447140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770447134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b66eb454746e6a409058276ea8d05e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Solve: 0
+  Tiles2: {fileID: 1129186641}
+  touch: 0
 --- !u!1 &941329279
 GameObject:
   m_ObjectHideFlags: 0
