@@ -58,7 +58,6 @@ public class TileGame : MonoBehaviour
             case "Second":
                 {
                     touch = true;
-                    touch = true;
                     if (touch == true)
                     {
                         if (Solve <= 1)
@@ -70,7 +69,6 @@ public class TileGame : MonoBehaviour
                 break;
             case "False":
                 {
-                    touch = true;
                     touch = true;
                     if (touch == true)
                     {
