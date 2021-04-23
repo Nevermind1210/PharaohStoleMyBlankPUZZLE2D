@@ -2,6 +2,4 @@
 public interface IGrabbable 
 {
     void Grab();
-
-    void Drop();
 }
