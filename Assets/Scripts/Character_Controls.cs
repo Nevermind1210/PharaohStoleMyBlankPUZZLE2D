@@ -20,6 +20,14 @@ public class Character_Controls : MonoBehaviour
         {
             AttemptGrab(); // invoke function if there is something to grab.
         }
+
+        if(Input.GetKeyUp(KeyCode.E))
+        {
+            if (objectToGrab != null)
+            {
+                AttemptDrop();
+            }
+        }
     }
 
     void FixedUpdate()
@@ -31,22 +39,28 @@ public class Character_Controls : MonoBehaviour
     {
         if(objectToGrab != null)
         {
-            objectToGrab.Grab();
+            objectToGrab.Grab(this);
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void AttemptDrop()
     {
-        IGrabbable grabbableObject = collision.GetComponent<IGrabbable>();
-        if(grabbableObject != null)
+        objectToGrab.Drop();
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        IGrabbable grabbableObject = collision.gameObject.GetComponent<IGrabbable>();
+        if (grabbableObject != null)
         {
             objectToGrab = grabbableObject;
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+
+    private void OnCollisionExit2D(Collision2D collision)
     {
-        if(collision.GetComponent<IGrabbable>() != null)
+        if(collision.gameObject.GetComponent<IGrabbable>() != null)
         {
             objectToGrab = null;
         }

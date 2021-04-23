@@ -3,25 +3,22 @@ using UnityEngine;
 
 public class PlayerGrabs : MonoBehaviour, IGrabbable
 {
-    Character_Controls player;
+    //Character_Controls player;
 
     public float distance = 1f;
     public LayerMask boxMask;
-    public Collider2D objectCollider;
-    public Collider2D anotherCollider;
+    //public Collider2D objectCollider;
+    //public Collider2D anotherCollider;
     public bool isGrabbing = false;
     public bool yAxisOnly;
     public bool xAxisOnly;
 
     GameObject box;
 
-    // OnCollisionEnter is called when this collider/rigidbody has begun touching another rigidbody/collider
-    //private void OnCollisionEnter(Collision collision)
-    //{
-    //    if(Input.GetKey(KeyCode.E))
-    //    {
-    //    }
-    //}
+    void Awake()
+    {
+
+    }
 
     // Update is called once per frame
     void Update()
@@ -35,8 +32,14 @@ public class PlayerGrabs : MonoBehaviour, IGrabbable
         Gizmos.DrawLine(transform.position, (Vector2)transform.position + Vector2.right * transform.localScale.x * distance);
     }
 
-    public void Grab()
+    public void Grab(Character_Controls character)
     {
+        yAxisOnly = true;
+        xAxisOnly = false;
+        transform.parent = character.transform;
+        character.moveSpeed = 1.5f;
+
+        /*
         if (objectCollider.IsTouching(anotherCollider) && isGrabbing)
         {
             if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S))
@@ -45,6 +48,7 @@ public class PlayerGrabs : MonoBehaviour, IGrabbable
                 xAxisOnly = false;
                 anotherCollider.transform.parent = player.transform;
                 player.moveSpeed = 1.5f;
+                Debug.Log("W and S keys are pressed");
             }    
         }
 
@@ -54,6 +58,7 @@ public class PlayerGrabs : MonoBehaviour, IGrabbable
             xAxisOnly = false;
             anotherCollider.transform.parent = player.transform;
             player.moveSpeed = 1.5f;
+            Debug.Log("A and D keys are pressed");
         }
         else
         {
@@ -61,6 +66,11 @@ public class PlayerGrabs : MonoBehaviour, IGrabbable
             xAxisOnly = true;
             anotherCollider.transform.parent = null;
             player.moveSpeed = 5f;
-        }
+        }*/
+    }
+
+    public void Drop()
+    {
+        transform.parent = null;
     }
 }

@@ -1,7 +1,7 @@
 //an interface for each item that can be grabbed.
 public interface IGrabbable 
 {
-    void Grab();
+    void Grab(Character_Controls character);
 
     void Drop();
 }
