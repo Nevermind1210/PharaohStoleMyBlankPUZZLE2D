@@ -29,12 +29,14 @@ public class PlayerBoxPull : MonoBehaviour
         {
             if (beingPushed == false)
             {
-                transform.position = new Vector3(xPos, transform.position.y);
-                transform.position = new Vector3(yPos, transform.position.x);
+                transform.position = new Vector2(xPos, transform.position.y);
+                transform.position = new Vector2(yPos, transform.position.x);
             }
             else
+            {
                 xPos = transform.position.x;
                 yPos = transform.position.y;
+            }
         }
         else if (mode == 1)
         {
