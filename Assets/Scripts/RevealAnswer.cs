@@ -6,16 +6,26 @@ public class RevealAnswer : MonoBehaviour
 {
     [SerializeField]
     private GameObject answer;
-    private bool pas;
+    [SerializeField]
+    private GameObject answer2;
+    [SerializeField]
+    private bool revl;
+    [SerializeField]
+    private bool ans;
+    
     // Start is called before the first frame update
     void Start()
     {
         answer.SetActive(false);
+
+        answer2.SetActive(false);
     }
 
-    private IEnumerator Delay(float _Delay)
+    private IEnumerator Delay(GameObject disableThis, float _Delay)
     {
         yield return new WaitForSeconds(_Delay);
+
+        disableThis.SetActive(false);
     }
     // Update is called once per frame
     void Update()
@@ -23,24 +33,51 @@ public class RevealAnswer : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         switch (collision.gameObject.tag)
         {
             case "Memory":
                 {
-                    pas = true;
-                    if (pas == true)
+                    revl = true;
+                    if (revl == true)
                     {
                         answer.SetActive(true);
 
-                        StartCoroutine(Delay(3));
+                        StartCoroutine(Delay(answer, 3));
 
-                        answer.SetActive(false);
+                        
+
+                        revl = false;
                     }
                 }
-            break;
+                break;
+            case "Memry":
+                {
+                    ans = true;
+                    if (ans == true)
+                    {
+                        answer2.SetActive(true);
+
+                        StartCoroutine(Delay(answer, 3));
+
+                        answer2.SetActive(false);
+
+                        ans = false;
+                    }
+                }
+                break;
         }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        
     }
 
     private void OnCollisionExit2D(Collision2D collision)
