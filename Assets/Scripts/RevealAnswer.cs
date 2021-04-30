@@ -49,9 +49,7 @@ public class RevealAnswer : MonoBehaviour
                     {
                         answer.SetActive(true);
 
-                        StartCoroutine(Delay(answer, 3));
-
-                        
+                        StartCoroutine(Delay(answer, 0.5f));
 
                         revl = false;
                     }
@@ -64,9 +62,7 @@ public class RevealAnswer : MonoBehaviour
                     {
                         answer2.SetActive(true);
 
-                        StartCoroutine(Delay(answer, 3));
-
-                        answer2.SetActive(false);
+                        StartCoroutine(Delay(answer2, 0.5f));
 
                         ans = false;
                     }
