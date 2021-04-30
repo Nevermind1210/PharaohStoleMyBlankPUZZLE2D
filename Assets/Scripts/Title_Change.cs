@@ -10,9 +10,6 @@ public class Title_Change : MonoBehaviour
     private float TitleName = 0f;
     [SerializeField]
     public Text TitleText;
-    public Button dog;
-    public Button cat;
-    public Button goldfish;
     [SerializeField]
     private GameObject Dog;
     [SerializeField]
@@ -21,6 +18,11 @@ public class Title_Change : MonoBehaviour
     private GameObject Goldfish;
     [SerializeField]
     private GameObject Title;
+
+    public Button dog;
+    public Button cat;
+    public Button goldfish;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -90,6 +92,7 @@ public class Title_Change : MonoBehaviour
                     }
                 }
             break;
+
             case 3:
                 {
                     if (TitleName == 0)

@@ -23,10 +23,7 @@ public class Character_Controls : MonoBehaviour
 
         if(Input.GetKeyUp(KeyCode.E))
         {
-            if (objectToGrab != null)
-            {
-                AttemptDrop();
-            }
+            AttemptDrop(); // invoke function when player let go of specific key.
         }
     }
 
@@ -45,7 +42,7 @@ public class Character_Controls : MonoBehaviour
 
     private void AttemptDrop()
     {
-        objectToGrab.Drop();
+        objectToGrab.Drop(this);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -60,7 +57,7 @@ public class Character_Controls : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if(collision.gameObject.GetComponent<IGrabbable>() != null)
+        if(collision.gameObject.GetComponent<IGrabbable>() != null && !Input.GetKey(KeyCode.E))
         {
             objectToGrab = null;
         }
