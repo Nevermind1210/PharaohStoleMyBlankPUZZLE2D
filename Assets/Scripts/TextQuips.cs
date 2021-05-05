@@ -36,6 +36,8 @@ public class TextQuips : MonoBehaviour
 
     public void NextSentence()
     {
+        continueButton.SetActive(false);
+
         if (index < sentences.Length - 1)
         {
             index++;
