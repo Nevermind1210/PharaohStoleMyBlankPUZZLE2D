@@ -1,31 +1,19 @@
 fileFormatVersion: 2
-guid: 2eeaa77cca9dcbc48ba5aa9fec1ae3d3
+guid: 933b28fcd846d6d41927fd60cf706e3f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5434114855436906539
-    second: Puzzle Explorer_0
+      213: -6839942168915171338
+    second: Male Explorer Pulling 2  _0
   - first:
-      213: 6696422240439654551
-    second: Puzzle Explorer_1
+      213: -696516785712931346
+    second: Male Explorer Pulling 2  _1
   - first:
-      213: 7025077519814338556
-    second: Puzzle Explorer_2
+      213: -3232626754091594744
+    second: Male Explorer Pulling 2  _2
   - first:
-      213: -8190546509902060065
-    second: Puzzle Explorer_3
-  - first:
-      213: -7281935881438416712
-    second: Puzzle Explorer_4
-  - first:
-      213: 7428702872181494462
-    second: Puzzle Explorer_5
-  - first:
-      213: -784635183972454791
-    second: Puzzle Explorer_6
-  - first:
-      213: 959485447324448546
-    second: Puzzle Explorer_7
+      213: -2683204085279510084
+    second: Male Explorer Pulling 2  _3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -70,7 +58,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 10
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -123,41 +111,17 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Puzzle Explorer_0
+      name: Male Explorer Pulling 2  _0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 32
-        width: 21
-        height: 27
+        x: 0
+        y: 160
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,20 +129,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b207dfa7baad96b40800000000000000
-      internalID: 5434114855436906539
+      spriteID: 6f7a89146d4a311a0800000000000000
+      internalID: -6839942168915171338
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puzzle Explorer_1
+      name: Male Explorer Pulling 2  _1
       rect:
         serializedVersion: 2
-        x: 23
-        y: 32
-        width: 21
-        height: 27
+        x: 160
+        y: 160
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -186,20 +150,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7985e6b6c887eec50800000000000000
-      internalID: 6696422240439654551
+      spriteID: eeddb777ca97556f0800000000000000
+      internalID: -696516785712931346
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puzzle Explorer_2
+      name: Male Explorer Pulling 2  _2
       rect:
         serializedVersion: 2
-        x: 45
-        y: 32
-        width: 12
-        height: 27
+        x: 0
+        y: 0
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -207,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf7ad18a8c61e7160800000000000000
-      internalID: 7025077519814338556
+      spriteID: 80c42f628176323d0800000000000000
+      internalID: -3232626754091594744
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puzzle Explorer_3
+      name: Male Explorer Pulling 2  _3
       rect:
         serializedVersion: 2
-        x: 59
-        y: 32
-        width: 12
-        height: 27
+        x: 160
+        y: 0
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,92 +192,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd5e8f83855555e80800000000000000
-      internalID: -8190546509902060065
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Puzzle Explorer_4
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 1
-        width: 21
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8b031bda5ed51fa90800000000000000
-      internalID: -7281935881438416712
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Puzzle Explorer_5
-      rect:
-        serializedVersion: 2
-        x: 23
-        y: 1
-        width: 21
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eb25d4e37ed081760800000000000000
-      internalID: 7428702872181494462
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Puzzle Explorer_6
-      rect:
-        serializedVersion: 2
-        x: 45
-        y: 1
-        width: 14
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 97e6c05157a6c15f0800000000000000
-      internalID: -784635183972454791
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Puzzle Explorer_7
-      rect:
-        serializedVersion: 2
-        x: 60
-        y: 1
-        width: 14
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2273ee64ee6c05d00800000000000000
-      internalID: 959485447324448546
+      spriteID: cb1b905c91853cad0800000000000000
+      internalID: -2683204085279510084
       vertices: []
       indices: 
       edges: []

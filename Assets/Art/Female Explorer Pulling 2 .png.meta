@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: f61b1e98b8158c740838a506c67173f9
+guid: 9ca4bc18897509544a51b7b23c19b1d9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8061751725580744449
-    second: Female Explorer Idle 4 _0
+      213: -5621319458607480064
+    second: Female Explorer Pulling 2 _0
   - first:
-      213: 6647376839877724304
-    second: Female Explorer Idle 4 _1
+      213: 631023625924883592
+    second: Female Explorer Pulling 2 _1
+  - first:
+      213: -2378264936210907888
+    second: Female Explorer Pulling 2 _2
+  - first:
+      213: -8837933785241978370
+    second: Female Explorer Pulling 2 _3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -109,7 +115,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Female Explorer Idle 4 _0
+      name: Female Explorer Pulling 2 _0
       rect:
         serializedVersion: 2
         x: 0
@@ -123,14 +129,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff80e51c487ee1090800000000000000
-      internalID: -8061751725580744449
+      spriteID: 003c5b44cbf0df1b0800000000000000
+      internalID: -5621319458607480064
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Female Explorer Idle 4 _1
+      name: Female Explorer Pulling 2 _1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 884b12cf4a8d1c800800000000000000
+      internalID: 631023625924883592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Explorer Pulling 2 _2
       rect:
         serializedVersion: 2
         x: 0
@@ -144,8 +171,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 098021d340a304c50800000000000000
-      internalID: 6647376839877724304
+      spriteID: 01db16f14a4befed0800000000000000
+      internalID: -2378264936210907888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Explorer Pulling 2 _3
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef97a363c0a595580800000000000000
+      internalID: -8837933785241978370
       vertices: []
       indices: 
       edges: []

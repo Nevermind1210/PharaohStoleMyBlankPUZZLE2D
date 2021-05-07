@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: f61b1e98b8158c740838a506c67173f9
+guid: cd7dda2c11136cf42b0f01e17e7f0ec1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8061751725580744449
-    second: Female Explorer Idle 4 _0
+      213: 8483472306875991703
+    second: Male Explorer Pulling 1 _0
   - first:
-      213: 6647376839877724304
-    second: Female Explorer Idle 4 _1
+      213: 3996407957314828011
+    second: Male Explorer Pulling 1 _1
+  - first:
+      213: 2103246857805782982
+    second: Male Explorer Pulling 1 _2
+  - first:
+      213: 6677025798689768068
+    second: Male Explorer Pulling 1 _3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -109,7 +115,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Female Explorer Idle 4 _0
+      name: Male Explorer Pulling 1 _0
       rect:
         serializedVersion: 2
         x: 0
@@ -123,14 +129,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff80e51c487ee1090800000000000000
-      internalID: -8061751725580744449
+      spriteID: 7960531ad195bb570800000000000000
+      internalID: 8483472306875991703
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Female Explorer Idle 4 _1
+      name: Male Explorer Pulling 1 _1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be67b410dd7167730800000000000000
+      internalID: 3996407957314828011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male Explorer Pulling 1 _2
       rect:
         serializedVersion: 2
         x: 0
@@ -144,8 +171,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 098021d340a304c50800000000000000
-      internalID: 6647376839877724304
+      spriteID: 6cf587aafdb303d10800000000000000
+      internalID: 2103246857805782982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male Explorer Pulling 1 _3
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 482c507669f89ac50800000000000000
+      internalID: 6677025798689768068
       vertices: []
       indices: 
       edges: []
