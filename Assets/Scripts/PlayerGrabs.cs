@@ -15,17 +15,6 @@ public class PlayerGrabs : MonoBehaviour, IGrabbable
 
     GameObject box;
 
-    void Awake()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-       
-    }
-
     public void Grab(Character_Controls character)
     {
         transform.parent = character.transform;

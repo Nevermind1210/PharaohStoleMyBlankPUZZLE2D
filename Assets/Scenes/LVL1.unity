@@ -174,6 +174,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5004874925101243785, guid: 90f484f3158ca734d94d1bf139950acc, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 7634cb290df10d44ab62ed7b266c29ae, type: 2}
+    - target: {fileID: 5004874925101243788, guid: 90f484f3158ca734d94d1bf139950acc, type: 3}
+      propertyPath: m_Size.x
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004874925101243788, guid: 90f484f3158ca734d94d1bf139950acc, type: 3}
+      propertyPath: m_Size.y
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004874925101243788, guid: 90f484f3158ca734d94d1bf139950acc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 8224892307539390202, guid: 14a805b7a734a7b48a0fdebce638408d, type: 3}
+    - target: {fileID: 5004874925101243788, guid: 90f484f3158ca734d94d1bf139950acc, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5004874925101243790, guid: 90f484f3158ca734d94d1bf139950acc, type: 3}
       propertyPath: m_Size.x
       value: 1
@@ -367,7 +387,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 46abd35b7d94b644db61d085bd2583c3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
