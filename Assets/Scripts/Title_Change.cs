@@ -70,7 +70,10 @@ public class Title_Change : MonoBehaviour
         }
     }
 
-    public void RaiseStat(int value)
+    // I couldn't tell you why this was a solution to title changing all it does it checks if the value of title change is to X value 
+    // and then adds value and then above function will SEE that value being correct its all over-engineered. But interesting solution nontheless I would of just done
+    // SetActives INSIDE unity - Xavier Arias
+    public void RaiseStat(int value) 
     {
         switch (value)
         {
