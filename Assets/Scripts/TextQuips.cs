@@ -21,8 +21,13 @@ public class TextQuips : MonoBehaviour
     {
         if(textDisplay.text == sentences[index]) // if text at its end
         {
-            continueButton.SetActive(true); // set this true and allow the player to continue.
+            if(continueButton != null) // if the button exist in scene
+            {
+                continueButton.SetActive(true); // set this true and allow the player to continue.
+            }
+            StartCoroutine(DestroyDelay());
         }
+        
     }
 
     IEnumerator Type()
@@ -31,6 +36,14 @@ public class TextQuips : MonoBehaviour
         {
             textDisplay.text += letters;
             yield return new WaitForSeconds(typingSpeed); //this is always 0 but however its related to the letters that appear on the screen
+        }
+    }
+
+    IEnumerator DestroyDelay()
+    {
+        yield return new WaitForSecondsRealtime(2);
+        {
+            Destroy(textDisplay);
         }
     }
 
