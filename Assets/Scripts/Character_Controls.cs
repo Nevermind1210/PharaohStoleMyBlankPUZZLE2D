@@ -47,21 +47,18 @@ public class Character_Controls : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        IGrabbable grabbableObject = collision.gameObject.GetComponent<IGrabbable>();
+        IGrabbable grabbableObject = collision.gameObject.GetComponent<IGrabbable>(); // essentially will find any object that the player is collided with and will make it to a grabbable if we allow it to
         if (grabbableObject != null)
         {
-            objectToGrab = grabbableObject;
+            objectToGrab = grabbableObject; // Then hey presto its a grabby thingy and you can move with it.
         }
     }
-
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if(collision.gameObject.GetComponent<IGrabbable>() != null && !Input.GetKey(KeyCode.E))
+        if(collision.gameObject.GetComponent<IGrabbable>() != null && !Input.GetKey(KeyCode.E)) // checks if the componenet is with that script and if the key is not being pressed
         {
-            objectToGrab = null;
+            objectToGrab = null; // null it.
         }
     }
 }
-
-

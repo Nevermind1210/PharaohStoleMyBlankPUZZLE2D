@@ -6,18 +6,15 @@ using TMPro;
 
 public class Title_Change : MonoBehaviour
 {
-    [SerializeField]
-    private float TitleName = 0f;
-    [SerializeField]
-    public Text TitleText;
-    [SerializeField]
-    private GameObject Dog;
-    [SerializeField]
-    private GameObject Cat;
-    [SerializeField]
-    private GameObject Goldfish;
-    [SerializeField]
-    private GameObject Title;
+    [SerializeField] private float TitleName = 0f;
+    [SerializeField] public Text TitleText;
+    [SerializeField] public Text DescriptText;
+    [SerializeField] private GameObject Dog;
+    [SerializeField] private GameObject Cat;
+    [SerializeField] private GameObject Goldfish;
+    [SerializeField] private GameObject Title;
+    [SerializeField] private GameObject _text;
+    [SerializeField] private GameObject Menu;
 
     public Button dog;
     public Button cat;
@@ -27,6 +24,7 @@ public class Title_Change : MonoBehaviour
     void Start()
     {
         TitleText.text = "The Pharoh Stole My ________";
+        DescriptText.text = "What is your prized selection?";
         TitleName = 0;
     }
 
@@ -64,14 +62,18 @@ public class Title_Change : MonoBehaviour
         if (TitleName != 0)
         {
             Title.SetActive(true);
+            Menu.SetActive(true);
+            _text.SetActive(false);
             Goldfish.SetActive(false);
             Dog.SetActive(false);
             Cat.SetActive(false);
         }
-
     }
 
-    public void RaiseStat(int value)
+    // I couldn't tell you why this was a solution to title changing all it does it checks if the value of title change is to X value 
+    // and then adds value and then above function will SEE that value being correct its all over-engineered. But interesting solution nontheless I would of just done
+    // SetActives INSIDE unity - Xavier Arias
+    public void RaiseStat(int value) 
     {
         switch (value)
         {
@@ -101,7 +103,6 @@ public class Title_Change : MonoBehaviour
                     }
                 }
             break;
-
         }
     }
 }

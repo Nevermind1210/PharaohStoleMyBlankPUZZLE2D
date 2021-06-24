@@ -3,6 +3,9 @@ using UnityEngine;
 
 public class PlayerBoxPull : MonoBehaviour
 {
+    //This whole script is never used but was an idea to make the box have weight... solved
+    //in 3 scripts but interchangable now.
+
     public float defaultMass;
     public float imovableMass;
     public bool beingPushed;
